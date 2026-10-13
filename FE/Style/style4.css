@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#result {
+    font-size: 24px;
+    font-weight: bold;
+}

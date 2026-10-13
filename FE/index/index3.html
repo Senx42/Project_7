@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project_3</title>
+    <link rel="stylesheet" href="../Style/style3.css">
+    <script src="../JS/script3.js"></script>
+</head>
+
+<body>
+<div>
+  <h1>Табулювання функції</h1>
+  <h3>y = (sin^2x + 0.5)^0.5</h3>
+  <div>
+    <label>Початок: <input type="number" id="startX" value="0" step="0.01"></label> <br>
+    <label>Кінець: <input type="number" id="endX" value="0.2" step="0.01"></label> <br>
+    <label>Крок: <input type="number" id="stepH" value="0.025" step="0.001"></label> <br>
+    <button onclick="calculate()">Обчислити</button>
+  </div>
+    <div>
+        <div>
+            <h4>FOR</h4>
+            <table id="tFor"><thead><tr><th>x</th><th>y</th></tr></thead><tbody></tbody></table>
+        </div>
+        <div>
+            <h4>WHILE</h4>
+            <table id="tWhile"><thead><tr><th>x</th><th>y</th></tr></thead><tbody></tbody></table>
+        </div>
+        <div>
+            <h4>DO - WHILE</h4>
+            <table id="tDoWhile"><thead><tr><th>x</th><th>y</th></tr></thead><tbody></tbody></table>
+        </div>
+    </div>
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+</body>
+</html>
