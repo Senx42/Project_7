@@ -12,7 +12,7 @@ let images = [
     { name: "IDF", src: "../Photo/IDF.webp", chance: 3, reward: 5000 }
 ];
 let money = 7000;
-let spinPrice = 500;
+let spinPrice = 200;
 let spinning = false;
 let game = document.getElementById("game");
 let result = document.getElementById("result");
@@ -61,7 +61,7 @@ function sleep(ms) {
 }
 function createResult() {
     let slots = [[], [], []];
-    let winningImage = Math.random() < 0.4 ? weightedRandom() : null;
+    let winningImage = Math.random() < 0.2 ? weightedRandom() : null;
     let winningRow = Math.floor(Math.random() * 3);
     for (let column = 0; column < 3; column++) {
         let usedImages = winningImage ? [winningImage.name] : [];
