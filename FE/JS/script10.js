@@ -7,12 +7,12 @@ let images = [
     { name: "Israel", src: "../Photo/Israel.jpg", chance: 15, reward: 2000 },
     { name: "F-35", src: "../Photo/F-35.jpg", chance: 3, reward: 25000 },
     { name: "Hanuka", src: "../Photo/Hanuka.jpg", chance: 15, reward: 500 },
-    { name: "Shekel", src: "../Photo/Shekel.jpg", chance: 15, reward: 150 },
-    { name: "Tora", src: "../Photo/Torah.png", chance: 15, reward: 300 },
+    { name: "Shekel", src: "../Photo/Shekel.jpg", chance: 15, reward: 250 },
+    { name: "Tora", src: "../Photo/Torah.png", chance: 15, reward: 400 },
     { name: "IDF", src: "../Photo/IDF.webp", chance: 3, reward: 5000 }
 ];
-let money = 5000;
-let spinPrice = 250;
+let money = 7000;
+let spinPrice = 500;
 let spinning = false;
 let game = document.getElementById("game");
 let result = document.getElementById("result");
@@ -61,7 +61,7 @@ function sleep(ms) {
 }
 function createResult() {
     let slots = [[], [], []];
-    let winningImage = Math.random() < 0.5 ? weightedRandom() : null;
+    let winningImage = Math.random() < 0.4 ? weightedRandom() : null;
     let winningRow = Math.floor(Math.random() * 3);
     for (let column = 0; column < 3; column++) {
         let usedImages = winningImage ? [winningImage.name] : [];
