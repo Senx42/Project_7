@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #0002;
+}
+h1 {
+    margin-bottom: 25px;
+    color: #26364a;
+}
+.progress {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.score span:first-child {
+    color: green;
+}
+.score span:last-child {
+    color: red;
+}
+.card {
+    background: #f0f5ff;
+    padding: 30px;
+    border-radius: 12px;
+}
+#word {
+    font-size: 42px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+ruby {
+    ruby-position: over;
+}
+rt {
+    font-size: 16px;
+    color: #3978db;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+button {
+    background: #3978db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: #245bb0;
+}
+#message {
+    margin-top: 20px;
+    font-size: 17px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+}
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+.modal-content p {
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 450px;
+        padding: 25px 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .card {
+        padding: 25px 15px;
+    }
+    #word {
+        font-size: 36px;
+    }
+    .score {
+        font-size: 14px;
+    }
+    button {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+    .modal-content {
+        width: 90%;
+        max-width: 350px;
+        padding: 25px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 21px;
+    }
+    .progress {
+        font-size: 16px;
+    }
+    .score {
+        font-size: 13px;
+        gap: 10px;
+    }
+    .card {
+        padding: 20px 12px;
+    }
+    #word {
+        font-size: 30px;
+    }
+    rt {
+        font-size: 13px;
+    }
+    button {
+        width: 100%;
+    }
+}
+@media (max-height: 500px) and (max-width: 900px) {
+    body {
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+}

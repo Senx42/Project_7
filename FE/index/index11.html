@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project_10</title>
+    <script src="../JS/script11.js" defer></script>
+    <script src="../JQuery/jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="../Style/style11.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Вивчення японської мови</h1>
+        <div class="progress">
+            Крок: <span id="current">1</span> /
+            <span id="total">10</span>
+        </div>
+        <div class="score">
+            <span>Правильно: <b id="correct">0</b></span>
+            <span>Неправильно: <b id="incorrect">0</b></span>
+        </div>
+        <div class="card" id="card">
+            <h2 id="word">ぎんこう</h2>
+            <input type="text" id="translation"
+                placeholder="Введіть переклад">
+            <button id="check">Перевірити</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2>Результати тестування</h2>
+            <p id="result"></p>
+            <p id="level"></p>
+            <button id="restart">Пройти ще раз</button>
+        </div>
+    </div>
+</body>
+</html>
